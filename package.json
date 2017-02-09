@@ -1,0 +1,18 @@
+{
+  "name": "resilient",
+  "version": "1.0.0",
+  "description": "Sample node.js service with design for failure patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piotr Bochynski",
+  "license": "ISC",
+  "dependencies": {
+    "bench-rest": "^1.2.4",
+    "circuit-breaker-js": "0.0.1",
+    "colors": "^1.1.2",
+    "express": "^4.14.1",
+    "request": "^2.79.0"
+  }
+}
