@@ -5,7 +5,7 @@ function argvAsNumber(i, defaultVal) {
 }
 
 var job = {
-    "flow": {"get": "http://localhost:3000/statistics/loadtest"},
+    "flow": {"get": "http://localhost:3000/a/loadtest"},
     "runOptions": {"limit": argvAsNumber(2,30), "iterations": argvAsNumber(3,100), progress: 1000}
 };
 

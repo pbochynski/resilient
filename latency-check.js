@@ -5,7 +5,7 @@ function latencyCheck() {
     var iteration = 0;
     setInterval(function () {
         iteration = iteration + 1;
-        request("http://localhost:3000/statistics/" + iteration, {}, function (err, res, body) {
+        request("http://localhost:3000/a/" + iteration, {}, function (err, res, body) {
             if (err) {
                 return console.log('connection error'.red);
 
