@@ -3,7 +3,6 @@ var app = require('express')();
 var request = require('request');
 var port = process.env.PORT || 3000;
 
-
 app.get('/a/:number', function (req, res) {
     var time = process.hrtime();
 
@@ -18,7 +17,6 @@ app.get('/a/:number', function (req, res) {
             }
             res.send(json);
         });
-
 });
 
 
@@ -28,4 +26,4 @@ function latency(time) {
 }
 
 app.listen(port);
-console.log('Listening on port %s', port);
+console.log('Service A listening on port %s', port);

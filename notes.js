@@ -4,6 +4,7 @@ var breaker = new CircuitBreaker({windowDuration: 1000});
 
 var command = function (success, failure) {
     // call other service
+    // and invoke success() or failure()
 }
 
 
